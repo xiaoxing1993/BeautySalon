@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="101dp"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/dialog_order_commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dailogtitle_off_work" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_log0"
+                android:contentDescription="@string/dialog_off_work_time"
+                />
+
+            <TextView
+                android:id="@+id/tv_commit_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dailogtext_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_title_high"
+        android:background="@color/dialog_bottom_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_bt_high"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/commit"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/dailogbttext_size" />
+
+        <View
+            android:layout_width="@dimen/divide_line"
+            android:layout_height="@dimen/divide_linehigh"
+            android:background="@color/divide_line" >
+        </View>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_bt_high"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/dialog_info_color"
+            android:textSize="@dimen/dailogbttext_size" />
+    </LinearLayout>
+
+</LinearLayout>

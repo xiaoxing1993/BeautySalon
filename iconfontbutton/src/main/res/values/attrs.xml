@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconFontButton">
+        <attr name="upButtonText" format="string|reference"/>
+        <attr name="downText" format="string|reference"/>
+        <attr name="iconFontTextColor" format="color|reference"/>
+        <attr name="iconFontUpTextSize" format="dimension"/>
+        <attr name="iconFontDownTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

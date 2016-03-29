@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_high"
+        android:background="@color/white">
+        <com.example.kenjc.mytitlebar.MyTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mytitlebar_assistant"
+            android:background="@color/white"
+            custom:leftBackground="@mipmap/ic_cut"
+            custom:rightBackground="@mipmap/ic_add_order"
+            custom:titleText="@string/app_name"
+            custom:titleText_Color="@color/purple"
+            custom:titleText_Size="@dimen/navigation_textsize"/>
+    </LinearLayout>
+
+    <!--分界线-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line"
+        android:background="@color/divide_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/fg_ass_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="677"
+            android:id="@+id/assistant_fragmentPager"
+            android:name="com.wiipu.beautysalon_new_v2.Fragment.QueryCustomerFragment"
+            tools:layout="@layout/fragment_query_customer" />
+
+    </LinearLayout>
+
+    <!--分界线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line"
+        android:background="@color/divide_line" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_high"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom" >
+
+
+        <!--查询页面fragment的Button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_ass_query"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/icf_search"
+                android:id="@+id/tv_ass_query"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ass_query_down"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/assistant_query"/>
+        </LinearLayout>
+
+        <!--服务记录的fragment的Button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_ass_service_log"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/icf_log"
+                android:id="@+id/tv_ass_log"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ass_log_down"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/service_log"/>
+        </LinearLayout>
+
+        <!--个人数据的fragment的Button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_ass_data"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/icf_data"
+                android:id="@+id/tv_ass_data"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ass_data_down"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/my_data"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

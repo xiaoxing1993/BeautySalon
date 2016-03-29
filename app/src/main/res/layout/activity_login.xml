@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wiipu.beautysalon_new_v2.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_high"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <com.example.kenjc.mytitlebar.MyTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mytitlebar_login"
+            android:background="@color/white"
+            custom:titleText="@string/login"
+            custom:titleText_Color="@color/purple"
+            custom:titleText_Size="@dimen/navigation_textsize"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_height="88dp"
+        android:layout_width="88dp"
+        android:background="@drawable/login_picture_bg"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/scissors_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_picture">
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lbs_popup_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/login_et_phone"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="phone"
+                android:hint="@string/et_customer_phone"
+                android:background="@drawable/login_et_bg"
+                android:layout_margin="2dp"/>
+            <View
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/devide_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/login_et_verifier"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:inputType="textPassword"
+                    android:hint="@string/et_verifyCode"
+                    android:background="@drawable/login_et_bg"
+                    android:layout_margin="2dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    >
+                    <Button
+                        android:id="@+id/login_btn_getCheckCode"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignRight="@id/login_et_verifier"
+                        android:padding="5dp"
+                        android:background="@drawable/login_get_code_bg"
+                        android:text="@string/get_check_code"
+                        android:textColor="@color/tttext_color" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/login"
+            android:layout_below="@id/ll_user_info"
+            android:background="@drawable/btn_login_shape"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

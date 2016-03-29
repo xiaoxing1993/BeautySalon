@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="13dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值余额："/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/btn_true"
+                android:textSize="20sp"
+                android:id="@+id/btn_money_min"
+                android:text="@string/icf_minus"/>
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_left_money"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_money_plus"
+                android:textSize="20sp"
+                android:textColor="@color/btn_true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/icf_plus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="13dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送服务币："/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/btn_true"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btn_coins_min"
+                android:text="@string/icf_minus"/>
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_left_coins"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_true"
+                android:id="@+id/btn_coins_plus"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/icf_plus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:id="@+id/radio_group_top_money"
+        android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="69dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/top_up_1000"
+                android:text="\t 充1000\n\t  送200"
+                android:background="@drawable/checkbox_background"/>
+
+            <RadioButton
+                android:layout_width="69dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/top_up_2000"
+                android:text="\t 充2000\n\t  送500"
+                android:background="@drawable/checkbox_background"/>
+
+            <RadioButton
+                android:layout_width="69dp"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/top_up_5000"
+                android:text="\t充 5000\n\t 送1500"
+                android:background="@drawable/checkbox_background"/>
+
+    </RadioGroup>
+
+</LinearLayout>

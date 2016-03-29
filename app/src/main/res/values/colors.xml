@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="devide_line">#CBCED2</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple">#FF4081</color>
+
+    <color name="btn_false">#7e7979</color>
+    <color name="btn_true">#FF4070</color>
+
+    <color name="purple_min">#FF4070</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#FFF9F9F9</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="edit_color">#FFF5F5F5</color>
+    <color name="edittext_color">#4A4A4A</color>
+    <color name="ttedit_color">#666666</color>
+    <color name="tttext_color">#666666</color>
+    <color name="ttcarinfo_color">#666666</color>
+    <color name="carinfo_color">#222222</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#4A4A4A</color>
+    <color name="menu_color">#4A4A4A</color>
+    <color name="black_half">#50000000</color>
+
+    <color name="gray">#808080</color>
+    <color name="clientinfo_color">#eeffffff</color>
+    <color name="llcarinfo_color">#eeffffff</color>
+    <color name="rlcarinfo_color">#eeffffff</color>
+    <color name="divide_line">#D5D5D5</color>
+    <color name="order_list_gray">#9B9B9B</color>
+    <color name="order_list_red">#EF006D</color>
+    <color name="background">#EEEEEE</color>
+    <color name="vip_price">#E36456</color>
+    <color name="unvip_name">#6D6D6D</color>
+    <color name="order_detail_title">#E01974</color>
+    <color name="product_price">#E36456</color>
+    <color name="dialog_info_color">#FF4A4A4A</color>
+    <color name="dialog_title_color">#FFF5F5F5</color>
+    <color name="dialog_bottom_color">#FFF8F8F8</color>
+    <color name="dialog_bg_color">#FFFFFFFF</color>
+    <color name="dialog_item_color">#FF9B9B9B</color>
+</resources>

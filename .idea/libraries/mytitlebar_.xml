@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mytitlebar-">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/mytitlebar/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/mytitlebar/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
